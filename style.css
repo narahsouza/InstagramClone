@@ -1,0 +1,177 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Elementos base */
+body {
+    background-color: #fafafa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Links da página */
+a:link {
+    text-decoration: none; /* Remove sublinhado dos links */
+    cursor: pointer; /* Transforma o cursor na mãozinha quando passa no link */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+    font-size: 14px;
+}
+
+/* Celular */
+.phone {
+    padding-right: 25px;
+}
+
+/* Caixas */
+.boxes {
+    width: 350px;  /* Largura das caixas */
+    background-color: #ffffff;
+    align-items: start;
+}
+
+.top-box {
+    display: flex; /* Alinha os elementos em fila */
+    flex-direction: column; /* Direção dos itens */
+    align-items: center; /* Alinhamento vertical */
+    border: 1px solid lightgray;
+    height: 320px; /* Altura da caixa */
+    position: relative; /* Posição relativa ao elemento superior */
+    top: -3px;  /* Distância em relação ao topo */
+}
+
+.bottom-box {
+    display: flex; /* Alinha os elementos em fila */
+    flex-direction: column; /* Direção dos itens */
+    align-items: center; /* Alinhamento vertical */
+    border: 1px solid lightgray;
+    height: 90px; /* Altura da caixa */
+    position: relative; /* Posição relativa ao elemento superior */
+    top: 5px; /* Distância em relação ao topo */
+}
+
+/* Logo Instagram */
+.logo {
+    margin-top: 30px; /* Margem superior */
+    margin-bottom: 20px; /* Margem inferior */
+    width: 180px; /* Largura da logo */
+}
+
+/* Foto de perfil */
+.photo {
+    border-radius: 50%; /* Arredonda a imagem */
+    width: 85px; /* Largura da imagem */
+}
+
+/* Botão azul */
+.button {
+    background-color: #0095f6; /* Cor do botão */
+    border: none; /* Remove cor da borda do botão */
+    border-radius: 4px; /* Arredonda os cantos do botão */
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin-top: 30px;
+    width: 175px; /* Largura do botão */
+    height: 30px; /* Altura do botão */
+}
+
+.continue {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.remover {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #0095f6;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.isnot {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: rgb(141, 141, 141);
+}
+
+.change {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: rgb(141, 141, 141);
+}
+
+.link {
+    color: #0095f6;
+    font-weight: bold;
+}
+
+.getapps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.app, .google {
+    width: 140px;
+    margin: 20px 2px auto 2px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 60px auto;
+    color: rgb(141, 141, 141);
+    font-size: 12px;
+}
+
+.menu {
+    margin-bottom: 20px;
+}
+
+.item {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* media queries */
+
+@media (max-width: 1024px) {
+    .container {
+        width: 77%;
+    }
+}
+
+@media (max-width: 650px) {
+    .body {
+        background-color: #ffffff;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .phone {
+        display: none;
+    }
+
+    .continue {
+        width: 100%;
+    }
+
+    .box {
+        border: 1px solid transparent;
+    }
+}
